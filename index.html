@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RCB FanVerse</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="icon" href="pics/logo.png" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Chant Banner -->
+  <div class="chant-banner" id="chantBanner">
+  </div>
+
+  <!-- Nav Dock -->
+  <nav class="nav-dock" id="navDock">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#squad">Squad</a></li>
+      <li><a href="#stats">Stats</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video autoplay muted loop playsinline id="heroVideo">
+      <source src="rcb.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay">
+      <h2>Welcome to the RCB Fanverse</h2>
+      <p>Scroll to dive into the madness! 🏆</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="main-content" id="home">
+
+      <div class="hero-text">
+      <h1>The Real Action Starts Here</h1>
+      <p>From squad lineups to match stats and fan quizzes, we've got it all.</p>
+    </div>
+
+      <div class="hero-container">
+    <!-- Slideshow box on the left -->
+    <div class="slideshow-box">
+      <div class="slide-text">#PlayBold Moments</div>
+    <img class="slide-img" src="pics/wall.jpg" alt="RCB moment" />
+   <img class="slide-img" src="pics/wall(1).png" alt="RCB moment" />
+   <img class="slide-img" src="pics/wall(2).png" alt="RCB moment" />
+   <img class="slide-img" src="pics/wall(3).png" alt="RCB moment" />
+   <img class="slide-img" src="pics/wall(4).png" alt="RCB moment" />
+    <img class="slide-img" src="pics/wall(5).png" alt="RCB moment" />
+    <img class="slide-img" src="pics/wall(6).png" alt="RCB moment" />
+    </div>
+
+  </div>
+  </section>
+<!-- FAN GALLERY SECTION -->
+<section id="fanGallery" class="gallery-section">
+  <!-- Tabs -->
+  <div class="gallery-tabs">
+    <button class="tab-btn active" data-tab="moments" onclick="showTab('moments')">Fan Moments</button>
+    <button class="tab-btn" data-tab="memes" onclick="showTab('memes')">Meme Corner</button>
+  </div>
+
+  <!-- Carousel: Fan Moments -->
+  <div class="carousel-wrapper full-height" id="moments-carousel">
+    <button class="nav-btn prev" onclick="scrollCarousel('moments-carousel', -1)">‹</button>
+
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <img src="pics/fan1.jpg" alt="Fan 1" />
+        <img src="pics/fan2.jpg" alt="Fan 2" />
+        <img src="pics/fan3.jpg" alt="Fan 3" />
+        <img src="pics/fan4.png" alt="Fan 4" />
+        <img src="pics/fan1.jpg" alt="Fan 1" />
+        <img src="pics/fan2.jpg" alt="Fan 2" />
+        <img src="pics/fan3.jpg" alt="Fan 3" />
+        <img src="pics/fan4.png" alt="Fan 4" />
+        <img src="pics/fan1.jpg" alt="Fan 1" />
+        <img src="pics/fan2.jpg" alt="Fan 2" />
+        <img src="pics/fan3.jpg" alt="Fan 3" />
+        <img src="pics/fan4.png" alt="Fan 4" />
+        <img src="pics/fan1.jpg" alt="Fan 1" />
+        <img src="pics/fan2.jpg" alt="Fan 2" />
+        <img src="pics/fan3.jpg" alt="Fan 3" />
+        <img src="pics/fan4.png" alt="Fan 4" />
+      </div>
+    </div>
+
+    <button class="nav-btn next" onclick="scrollCarousel('moments-carousel', 1)">›</button>
+  </div>
+
+  <!-- Carousel: Meme Corner -->
+  <div class="carousel-wrapper full-height hidden" id="memes-carousel">
+    <button class="nav-btn prev" onclick="scrollCarousel('memes-carousel', -1)">‹</button>
+
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <img src="pics/meme1.png" alt="Meme 1" />
+        <img src="pics/meme2.jpg" alt="Meme 2" />
+        <img src="pics/meme3.jpg" alt="Meme 3" />
+        <img src="pics/meme4.png" alt="Meme 4" />
+        <img src="pics/meme5.png" alt="Meme 5" />
+        <img src="pics/meme6.jpg" alt="Meme 6" />
+        <img src="pics/meme7.png" alt="Meme 7" />
+        <img src="pics/meme1.png" alt="Meme 1" />
+        <img src="pics/meme2.jpg" alt="Meme 2" />
+        <img src="pics/meme3.jpg" alt="Meme 3" />
+        <img src="pics/meme4.png" alt="Meme 4" />
+        <img src="pics/meme5.png" alt="Meme 5" />
+        <img src="pics/meme6.jpg" alt="Meme 6" />
+        <img src="pics/meme7.png" alt="Meme 7" />
+      </div>
+    </div>
+
+    <button class="nav-btn next" onclick="scrollCarousel('memes-carousel', 1)">›</button>
+  </div>
+</section>
+
+<section class="store-section" id="store">
+  <h2 class="store-title">Official RCB Merchandise</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="pics/2025.png" alt="RCB Jersey" class="product-image">
+      <h3 class="product-name">PUMA x RCB 2025 Men's Official Match Jersey</h3>
+      <p class="product-price">₹4,999</p>
+      <a href="https://in.puma.com/in/en/pd/puma-x-rcb-2025-mens-official-match-jersey/607346?swatch=01" class="buy-button">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <img src="pics/plain .png" alt="RCB Cap" class="product-image">
+      <h3 class="product-name">PUMA x RCB 2025 Men's Fan Jersey</h3>
+      <p class="product-price">₹999</p>
+      <a href="https://in.puma.com/in/en/pd/puma-x-rcb-2025-mens-fan-jersey/713737?swatch=01" class="buy-button">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <img src="pics/top.png" alt="RCB Jersey" class="product-image">
+      <h3 class="product-name">PUMA x Royal Challengers Bangalore Men’s Tank</h3>
+      <p class="product-price">₹1,499</p>
+      <a href="https://in.puma.com/in/en/pd/puma-x-royal-challengers-bangalore-mens-tank/713742?swatch=01" class="buy-button">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <img src="pics/short.png" alt="RCB Jersey" class="product-image">
+      <h3 class="product-name">PUMA x RCB Men's Training Shorts</h3>
+      <p class="product-price">₹1,999</p>
+      <a href="https://in.puma.com/in/en/pd/puma-x-rcb-mens-training-shorts/713743?swatch=01" class="buy-button">Buy Now</a>
+    </div>
+     <div class="product-card">
+      <img src="pics/polo.png" alt="RCB Jersey" class="product-image">
+      <h3 class="product-name">PUMA x RCB Men's Striper Polo T-shirt</h3>
+      <p class="product-price">₹2,799</p>
+      <a href="https://in.puma.com/in/en/pd/puma-x-rcb-mens-striper-polo-t-shirt/608575?swatch=02" class="buy-button">Buy Now</a>
+    </div>
+    <!-- Add more product-card divs as needed -->
+  </div>
+</section>
+
+<section class="rcb-quote-section">
+  <div class="quote-wrapper">
+    <img src="pics/logo.png" alt="RCB Logo" class="rcb-logo">
+    <blockquote class="rcb-quote">
+      “It’s not just cricket, it’s a heartbeat. <br>
+      For every fan who believes till the last ball.” <br>
+     <br>
+     <br>
+    </blockquote>
+  </div>
+</section>
+
+<button id="scrollTopBtn" title="Back to top">⬆</button>
+
+
+
+  <script src="js/index.js"></script>
+</body>
+</html>
