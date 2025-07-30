@@ -1,0 +1,81 @@
+/* Font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Russo One', sans-serif;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
+}
+
+/* Header */
+header {
+  background: #a00000;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  border-bottom: 4px solid gold;
+}
+
+/* Main container */
+.squad-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Role section */
+.role-section h2 {
+  font-size: 2rem;
+  color: gold;
+  border-left: 6px solid red;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Grid */
+.player-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.player-card {
+  background: linear-gradient(145deg, #1a1a1a, #2c2c2c);
+  border: 2px solid red;
+  color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.player-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px gold;
+}
+
+.player-card span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: gold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  header {
+    font-size: 1.5rem;
+  }
+
+  .role-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .player-card {
+    font-size: 0.95rem;
+  }
+}
