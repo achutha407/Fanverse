@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RCB Fan Quiz</title>
+  <link rel="stylesheet" href="css/quiz.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet" />
+<link rel="icon" href="pics/logo.png" type="image/png" />
+  <style>
+    body {
+      font-family: 'Russo One', sans-serif;
+      background-color: #f8f9fa;
+      color: #343a40;
+    }
+    .quiz-container {
+      max-width: 600px;
+      margin: auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #c8102e; /* RCB Red */
+    }
+    button {
+      background-color: #c8102e; /* RCB Red */
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a00d24; /* Darker RCB Red */
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>RCB Fan Quiz</h1>
+    <form id="quizForm"></form>
+    <button type="submit" id="submitBtn">Submit</button>
+  </div>
+
+  <!-- Score Modal -->
+  <div id="scoreModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="scoreText">Your score: </p>
+    </div>
+  </div>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>
