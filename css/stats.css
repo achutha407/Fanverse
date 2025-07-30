@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Russo One', sans-serif;
+  background-color: #070707;
+  color: gold;
+}
+
+header {
+  background: #a00000;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  font-size: 2.5rem;
+  border-bottom: 4px solid #ffd700;
+}
+
+.stats-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.stat-card {
+  background: #1a1a1a;
+  border: 2px solid #d90429;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(217, 4, 41, 0.7);
+}
+
+.stat-card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #ffd700;
+}
+
+.stat-card p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.highlights-grid {
+  padding: 3rem;
+}
+
+.highlights-grid h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: gold;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  header {
+    font-size: 2rem;
+  }
+  .stat-card {
+    padding: 1.5rem;
+  }
+  .stat-card h2 {
+    font-size: 1.3rem;
+  }
+  .highlights-grid h2 {
+    font-size: 1.5rem;
+  }
+}
