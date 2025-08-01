@@ -1,4 +1,4 @@
-# 🏏 FANVERSE – RCB Fan Page 🔴⚫
+# 🏏 FANVERSE – RCB Fan Page 
 
 Welcome to **Fanverse**, a full-blown interactive fan page dedicated to **Royal Challengers Bengaluru (RCB)** – because being an RCB fan isn't just a choice, it's a lifestyle. This project is a tribute to the squad that keeps us believing, *Ee Sala Cup Namde!* 🏆
 
