@@ -38,5 +38,4 @@ Welcome to **Fanverse**, a full-blown interactive fan page dedicated to **Royal 
 ---
 
 
-
 > **Ee Sala README Namdu.**
